@@ -5,7 +5,8 @@ class AnalyticsService {
 
   final FirebaseAnalytics _analytics;
 
-  Future<void> logEvent(String name, [Map<String, Object?>? params]) {
-    return _analytics.logEvent(name: name, parameters: params);
-  }
+  Future<void> logEvent(String name, [Map<String, Object>? params]) {
+  return _analytics.logEvent(name: name, parameters: params);
+}
+
 }
